@@ -1,0 +1,6 @@
+dependencies:
+- name: zookeeper
+  version: 1.2.0
+  repository: file://../zookeeper
+  condition: zookeeper.enabled
+
