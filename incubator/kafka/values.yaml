@@ -6,7 +6,7 @@
 replicas: 3
 
 ## The kafka image repository
-image: "valentinradulescu19/cp-kafka_arm64"
+image: "iecedge/cp-kafka-arm64"
 
 ## The kafka image tag
 imageTag: "5.0.1"  # Confluent image for Kafka 2.0.0
