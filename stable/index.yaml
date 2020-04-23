@@ -1,0 +1,164 @@
+apiVersion: v1
+entries:
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 6.5.4
+    created: "2020-04-23T10:15:31.456809486+03:00"
+    description: Flexible and powerful open source, distributed real-time search and
+      analytics engine.
+    digest: c389cd913a5d167adefa5ab2a171ae3ecd63fb52defe6f3948df096bcfa95268
+    home: https://www.elastic.co/products/elasticsearch
+    icon: https://static-www.elastic.co/assets/blteb1c97719574938d/logo-elastic-elasticsearch-lt.svg
+    maintainers:
+    - email: christian@jetstack.io
+      name: simonswine
+    - email: michael.haselton@gmail.com
+      name: icereval
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: elasticsearch
+    sources:
+    - https://www.elastic.co/products/elasticsearch
+    - https://github.com/jetstack/elasticsearch-pet
+    - https://github.com/giantswarm/kubernetes-elastic-stack
+    - https://github.com/GoogleCloudPlatform/elasticsearch-docker
+    - https://github.com/clockworksoul/helm-elasticsearch
+    - https://github.com/pires/kubernetes-elasticsearch-cluster
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/elasticsearch-1.15.3/elasticsearch-1.15.3.tgz
+    version: 1.15.3
+  etcd-operator:
+  - apiVersion: v1
+    appVersion: 0.9.3
+    created: "2020-04-23T10:15:31.64731747+03:00"
+    description: CoreOS etcd-operator Helm chart for Kubernetes
+    digest: 10c1da5ddce40ed7f1b5dccb9aee30e57be5d60d1fb264d244dd4e2a7ae62cf4
+    home: https://github.com/coreos/etcd-operator
+    icon: https://raw.githubusercontent.com/coreos/etcd/master/logos/etcd-horizontal-color.png
+    maintainers:
+    - email: lachlan@deis.com
+      name: lachie83
+    - email: jaescobar.cell@gmail.com
+      name: alejandroEsc
+    name: etcd-operator
+    sources:
+    - https://github.com/coreos/etcd-operator
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/etcd-operator-0.8.3/etcd-operator-0.8.3.tgz
+    version: 0.8.3
+  fluentd-elasticsearch:
+  - apiVersion: v1
+    appVersion: 2.3.2
+    created: "2020-04-23T10:15:31.909896316+03:00"
+    description: A Fluentd Helm chart for Kubernetes with Elasticsearch output
+    digest: 3c99ea8c7c857209318b750719b3fbee883ccfda958dd99a89156ce5d92f7d94
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/fluent/fluentd-docs/master/public/logo/Fluentd_square.png
+    keywords:
+    - fluentd
+    - elasticsearch
+    - multiline
+    - detect-exceptions
+    - logging
+    maintainers:
+    - email: monotek23@gmail.com
+      name: monotek
+    name: fluentd-elasticsearch
+    sources:
+    - https://github.com/kubernetes/charts/stable/fluentd-elasticsearch
+    - https://github.com/fluent/fluentd-kubernetes-daemonset
+    - https://github.com/GoogleCloudPlatform/fluent-plugin-detect-exceptions
+    - https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/fluentd-elasticsearch/fluentd-es-image
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/fluentd-elasticsearch-1.4.1/fluentd-elasticsearch-1.4.1.tgz
+    version: 1.4.1
+  grafana:
+  - apiVersion: v1
+    appVersion: 6.4.2
+    created: "2020-04-23T10:15:32.113670113+03:00"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: 2543863aa0f5d2e47c116e8d5b5a0d41289779e87f10e6fe74a17b28191b8bec
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/grafana-4.0.2/grafana-4.0.2.tgz
+    version: 4.0.2
+  kibana:
+  - apiVersion: v1
+    appVersion: 6.5.4
+    created: "2020-04-23T10:15:32.316762279+03:00"
+    description: Kibana is an open source data visualization plugin for Elasticsearch
+    digest: 27da280adb0731ef8cdc62e711d28596c81e87cec0c761a963eb0ef2f7f2e51f
+    home: https://www.elastic.co/products/kibana
+    icon: https://raw.githubusercontent.com/elastic/kibana/master/src/ui/public/icons/kibana-color.svg
+    keywords:
+    - elasticsearch
+    - kibana
+    maintainers:
+    - email: casey@monax.io
+      name: compleatang
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/kibana-1.1.2/kibana-1.1.2.tgz
+    version: 1.1.2
+  logstash:
+  - apiVersion: v1
+    appVersion: 6.5.4
+    created: "2020-04-23T10:15:32.521038971+03:00"
+    description: Logstash is an open source, server-side data processing pipeline
+    digest: dbf1ae4282e90929667883b63ab244cc0f70d3c84739623217aca054319c66e7
+    home: https://www.elastic.co/products/logstash
+    icon: https://www.elastic.co/assets/blt86e4472872eed314/logo-elastic-logstash-lt.svg
+    maintainers:
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    - email: jrodgers@powerhrg.com
+      name: jar361
+    - email: christian.roggia@gmail.com
+      name: christian-roggia
+    name: logstash
+    sources:
+    - https://www.docker.elastic.co
+    - https://www.elastic.co/guide/en/logstash/current/index.html
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/logstash-1.4.2/logstash-1.4.2.tgz
+    version: 1.4.2
+  prometheus:
+  - apiVersion: v1
+    appVersion: 2.13.1
+    created: "2020-04-23T10:15:32.712137751+03:00"
+    description: Prometheus is a monitoring system and time series database.
+    digest: 32a6a717fca0ec79655807d5a310e0872ce254e221092e622aa0831244201a53
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    urls:
+    - https://github.com/iecedge/helm-k8s-charts/releases/download/prometheus-9.3.1/prometheus-9.3.1.tgz
+    version: 9.3.1
+generated: "2020-04-23T10:15:30.627308355+03:00"
