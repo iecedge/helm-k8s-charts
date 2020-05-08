@@ -21,7 +21,7 @@ updateStrategy:
 ## - https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper
 ## - https://github.com/kubernetes/contrib/blob/master/statefulsets/zookeeper/Makefile#L1
 image:
-  repository: valentinradulescu19/k8szk_arm64  # Container image repository for zookeeper container.
+  repository: iecedge/k8szk-arm64  # Container image repository for zookeeper container.
   tag: v3  # Container image tag for zookeeper container.
   pullPolicy: IfNotPresent  # Image pull criteria for zookeeper container.
 
@@ -150,7 +150,7 @@ exporters:
   jmx:
     enabled: false
     image:
-      repository: cachengo/jmx-prometheus-exporter
+      repository: iecedge/jmx-prometheus-exporter_arm64
       tag: 0.3.0
       pullPolicy: IfNotPresent
     config:
@@ -207,7 +207,7 @@ exporters:
   ## - https://www.datadoghq.com/blog/monitoring-kafka-performance-metrics/#zookeeper-metrics
     enabled: false
     image:
-      repository: akrainoenea/zookeeper_exporter
+      repository: iecedge/zookeeper_exporter_arm64
       tag: v1.1.2
       pullPolicy: IfNotPresent
     config:

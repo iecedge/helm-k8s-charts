@@ -150,7 +150,7 @@ exporters:
   jmx:
     enabled: false
     image:
-      repository: cachengo/jmx-prometheus-exporter
+      repository: iecedge/jmx-prometheus-exporter_arm64
       tag: 0.3.0
       pullPolicy: IfNotPresent
     config:
@@ -207,7 +207,7 @@ exporters:
   ## - https://www.datadoghq.com/blog/monitoring-kafka-performance-metrics/#zookeeper-metrics
     enabled: false
     image:
-      repository: akrainoenea/zookeeper_exporter
+      repository: iecedge/zookeeper_exporter_arm64
       tag: v1.1.2
       pullPolicy: IfNotPresent
     config:
